@@ -36,8 +36,8 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 
-# CSRF_TRUSTED_ORIGINS = [
-#     '', 'https://jetticon.com']
+CSRF_TRUSTED_ORIGINS = [
+    'https//:delivery-track-production.up.railway.app', '']
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'http')
 CSRF_USE_SESSIONS = False
 CSRF_COOKIE_SECURE = True
@@ -102,11 +102,15 @@ WSGI_APPLICATION = 'delivery.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    "default": dj_database_url.config(default=os.getenv('DATABASE_URL'), conn_max_age=1800),
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 import os
 
