@@ -129,7 +129,7 @@
                         <h3>Track your package seemlessly in minutes.</h3>
                         <form action="{% url 'track_delivery:track' %}" method="GET">
                 
-                            <input type="search" name="search" id="search" placeholder="Enter Your Tracking ID 🚚">
+                            <input style="background: #fff url('{% static 'images/search_100px.png' %}') no-repeat 10px 50%; background-size: 20px;" type="search" name="search" id="search" placeholder="Enter Your Tracking ID 🚚">
                             <input type="submit" value="Track">
                         </form>
                     </div>

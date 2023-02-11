@@ -6,7 +6,7 @@ body {
     padding: 0;
     width: 100%;
     margin: 0;
-    background-color: #00fa;
+    background-color: rgba(138, 169, 255, 0.603);
     /* overflow-x: hidden; */
 }
 .container{
@@ -83,26 +83,26 @@ h3 {
 }
 
 .slideshow li:nth-child(1) {
-    background-image: url(/static/images/engin-akyurt-BawjznQ3Q8U-unsplash.jpg);
+    /* background-image: url(/static/images/engin-akyurt-BawjznQ3Q8U-unsplash.jpg); */
 }
 
 .slideshow li:nth-child(2) {
-    background-image: url(/static/images/anfal-shamsudeen-Sf8g7a3duRY-unsplash.jpg);
+    /* background-image: url(/static/images/anfal-shamsudeen-Sf8g7a3duRY-unsplash.jpg); */
     animation-delay: 7s;
 }
 
 .slideshow li:nth-child(3) {
-    background-image: url(/static/images/pexels-francesco-ungaro-281260.jpg);
+    /* background-image: url(/static/images/pexels-francesco-ungaro-281260.jpg); */
     animation-delay: 14s;
 }
 
 .slideshow li:nth-child(4) {
-    background-image: url(/static/images/pexels-karolina-grabowska-4194843.jpg);
+    /* background-image: url(/static/images/pexels-karolina-grabowska-4194843.jpg); */
     animation-delay: 21s;
 }
 
 .slideshow li:nth-child(5) {
-    background-image: url(/static/images/pexels-adrien-olichon-2387793.jpg);
+    /* background-image: url(/static/images/pexels-adrien-olichon-2387793.jpg); */
     animation-delay: 28s;
 }
 
@@ -184,8 +184,8 @@ li{
     padding-left: 40px;
     padding-right: 165px;
     font-size: 20px;
-    background: #fff url("/images/search_100px.png") no-repeat 10px 50%;
-    background-size: 25px;
+    /* background: #fff url("/images/search_100px.png") no-repeat 10px 50%; */
+    
 }
 
 
