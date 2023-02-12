@@ -33,7 +33,7 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'delivery-track-production.up.railway.app', 'bentchmarck.com']
+    'delivery-track-production.up.railway.app', '127.0.0.1', '127.0.0.1:8000', 'bentchmarck.com']
 
 
 CSRF_TRUSTED_ORIGINS = [
@@ -102,7 +102,7 @@ WSGI_APPLICATION = 'delivery.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    "default": dj_database_url.config(default=os.getenv('DATABASE_URL'), conn_max_age=1800),
+    "default": dj_database_url.config(default='postgresql://postgres:UMDCxwmgsjhHUJteEsyJ@containers-us-west-153.railway.app:7066/railway', conn_max_age=1800),
 }
 
 # DATABASES = {
