@@ -257,7 +257,7 @@ li{
     /* z-index: 1; */
 }
 .about-image:hover{
-    transform: translateX(50px);
+    transform: translateX(10px);
 }
 .about-body-list{
     display: flex;
