@@ -124,3 +124,14 @@ function displayHamMenu2(ham) {
 // function cancelInfoCard(){
 //   packageInfoCard.style.display = 'none';
 // }
+
+const navBar = document.querySelector('.nav-bar');
+document.addEventListener('scroll', (event) => {
+  console.log(window.scrollY);
+  if (window.scrollY != 0) {
+    navBar.classList.add('fix-top');
+  } else {
+    navBar.classList.remove('fix-top');
+  }
+  
+})

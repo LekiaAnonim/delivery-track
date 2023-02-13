@@ -3,11 +3,25 @@
 body {
     font-family: Dubai-Light, 'Lato', sans-serif;
     color: #fff;
-    padding: 0;
     width: 100%;
     margin: 0;
+    padding: 0;
     background-color: rgba(138, 169, 255, 0.603);
-    /* overflow-x: hidden; */
+    /* border: #ea830e solid; */
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+.fix-top{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-bottom: 8px;
+    background-color: #000;
+    z-index: 5000;
 }
 .container{
     position: relative;
@@ -28,6 +42,7 @@ h1 {
     margin-top: 10%;
     padding: 0;
     margin-bottom: 0;
+    margin: 0;
     /* text-shadow: 0 1px 0 #ccc,
         0 2px 0 #c9c9c9,
         0 3px 0 #bbb,
@@ -156,6 +171,9 @@ li{
     margin-right: 10px;
     color: rgb(255, 255, 255);
 }
+.nav-menu nav ul li a{
+    color: rgb(255, 255, 255);
+}
 .menu-image-text{
     display: flex;
     align-items: center;
@@ -175,6 +193,10 @@ li{
     margin-right: 5px;
     color: rgb(255, 136, 0);
 }
+
+.background-content{
+    margin-top: 100px;
+}
 .background-content input[id='search']{
     width: 80%;
     height: 70px;
@@ -184,8 +206,6 @@ li{
     padding-left: 40px;
     padding-right: 165px;
     font-size: 20px;
-    /* background: #fff url("/images/search_100px.png") no-repeat 10px 50%; */
-    
 }
 
 
@@ -210,7 +230,7 @@ li{
     align-items: center;
     background-color: rgb(9, 103, 245);
     padding: 20px;
-    border-radius: 30% 0 30% 0;
+    border-radius: 12px;
     flex-wrap: wrap;
 }
 .about-image{
@@ -221,7 +241,7 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 50;
+    /* z-index: 50; */
     transition: 0.5s;
 }
 .about-image img{
@@ -231,9 +251,10 @@ li{
     border-radius: 50%;
     /* border: 20px solid rgb(95, 159, 255); */
     transition: 0.5s;
-    z-index: 2;
+    /* z-index: 2; */
     transform-origin: center;
-    position: relative;
+    /* position: relative; */
+    /* z-index: 1; */
 }
 .about-image:hover{
     transform: translateX(50px);
@@ -252,7 +273,7 @@ li{
     width: 50%;
     padding-left: 30px;
     padding-right: 20px;
-    min-width: 350px;
+    min-width: 300px;
 }
 .about-text-body p{
     color: rgb(236, 236, 236);
@@ -394,11 +415,12 @@ li{
     margin-top: 200px;
     padding-top: 100px;
     background-color: black;
+    height: fit-content;
 
 }
 .testim {
-    width: 100%;
-    margin-top: 100px;
+    max-width: 100%;
+    margin-top: 200px;
     position: relative;
     /* top: 50%; */
     -webkit-transform: translatey(-50%);
@@ -410,8 +432,8 @@ li{
 
 .testim .wrap {
     position: relative;
-    width: 100%;
-    max-width: 1020px;
+    max-width: 100%;
+    /* max-width: 1020px; */
     padding: 40px 20px;
     margin: auto;
 }
@@ -1278,11 +1300,26 @@ li{
     .background-content input[type="submit"] {
         width: 90px;
 
-        margin-left: -130px;
+        margin-left: -96px;
     }
-
+    .background-content input[id='search'] {
+        width: 90%;
+        padding-left: 40px;
+        padding-right: 100px;
+        font-size: 14px;
+    }
     .cancel {
-        margin-left: -8%;
-        margin-top: -40%;
+        margin-left: -5%;
+        margin-top: -80%;
+    }
+    h1{
+        line-height: 1;
+    }
+    .background-content{
+        margin-top: 50px;
+    }
+    .container {
+        position: relative;
+        height: 60vh;
     }
 }
