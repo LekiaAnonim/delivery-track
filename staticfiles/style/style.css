@@ -6,7 +6,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: rgba(138, 169, 255, 0.603);
+    /* background-color: rgba(138, 169, 255, 0.603); */
     /* border: #ea830e solid; */
 }
 a{
@@ -1367,10 +1367,12 @@ li{
     margin: 0;
 }
 .shipment-info hr{
-    border: 1px #fafafa solid;
+    border: 1px #d8d7d7 solid;
+    margin: 20px auto;
 }
 .shipment-title-id-description{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .shipment-title-id-description .shipment-description{
     padding: 0;
@@ -1383,6 +1385,7 @@ li{
     margin: 0;
     color: #000;
     line-height: 1;
+    font-size: 18px;
     /* border: #ea830e solid; */
     text-align: left;
 }
@@ -1397,7 +1400,7 @@ li{
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    border: 3px #424242 solid;
+    border: 3px #9b9b9b solid;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1405,8 +1408,8 @@ li{
 }
 .package-track-line{
     width: 0.1px;
-    height: 40px;
-    border: 1.5px #424242 dashed;
+    height: 30px;
+    border: 3px #9b9b9b dashed;
 }
 .package-track-card{
     display: flex;
@@ -1449,6 +1452,11 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #0e66ea;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px 5px #678aff;
+    font-weight: 900;
+    font-size: 10px;
 }
 
 /* .active-track ~ .package-track-card .package-track-line{
@@ -1458,22 +1466,30 @@ li{
 .package-status-track-container .package-track-card .package-track-dot:not(.active-track ~ .package-track-card .package-track-dot) {
     background-color: #0e66ea;
     border: 3px #0e66ea solid;
-    /* content: "\2713"; */
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 800;
 }
 .package-status-track-container .package-track-card .package-track-line:not(.active-track ~ .package-track-card .package-track-line) {
-    border: 1.5px #0e66ea solid;
+    border: 3px #0e66ea solid;
 }
 
 .package-status-track-container .package-track-card .package-track-dot {
-    border: 3px #424242 solid;
+    border: 3px #9b9b9b solid;
     background-color: none;
+    font-weight: 800;
 }
 .active-track ~ .package-track-card .package-track-dot {
-    border: 3px #424242 solid;
-    background-color: #ffff;
+    border: 3px #9b9b9b solid;
+    background-color: none;
+    font-weight: 800;
     
 }
 .active-track ~ .package-track-card .package-track-line {
-    border: 1.5px #424242 dashed;
+    border: 3px #9b9b9b dashed;
+}
+.shipment-comment{
+    padding: 10px 20px;
+    background-color: #0e66ea;
+    border-radius: 10px;
+    height: fit-content;
 }

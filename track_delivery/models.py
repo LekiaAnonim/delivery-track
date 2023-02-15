@@ -12,7 +12,7 @@ def random_alphanumeric_string():
             string.ascii_letters + string.digits,
             k=12
         )
-    )
+    )+'BMK'
 
 class Package(models.Model):
     name = models.CharField(max_length=500, null=True)
