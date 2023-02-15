@@ -123,6 +123,7 @@
                     <h2 class="shipment-heading-2">{{package.name}}</h2>
                     <h3 class="shipment-heading-3">{{package.track_id}}</h3>
                     <p class="shipment-description">{{package.short_description}}</p>
+                    <p class="shipment-description">{{package.phone_number}}</p>
                 </div>
                 <div class="shipment-title-id-description">
                     <p class="shipment-section-title">Estimated Delivery Period</p>
@@ -148,7 +149,7 @@
                         <p>On the Way</p>
                         {% endif %}
                         {% if package.delivery_status == 'On hold' %}
-                        <p>On Hold</p>
+                        <p class="package-on-hold">On Hold</p>
                         {% endif %}
                     </div>
                 </div>
@@ -165,6 +166,19 @@
                     </div>
                     <div class="package-track-text"><p>Delivered</p></div>
                 </div>
+            </div>
+            <div class="blob green current-location">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    style="fill: rgb(248, 27, 27);transform: ;msFilter:;">
+                    <path
+                        d="M12 2C7.589 2 4 5.589 4 9.995 3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12 0-4.411-3.589-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z">
+                    </path>
+                </svg>
+                {% if package.current_location %}
+                <p>{{package.current_location}}</p>
+                {% else %}
+                <p></p>
+                {% endif %}
             </div>
             <div class="shipment-title-id-description shipment-address">
                 <p class="shipment-section-title">Ship To</p>

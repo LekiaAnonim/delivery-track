@@ -30,7 +30,7 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'delivery-track-production.up.railway.app', '127.0.0.1', '127.0.0.1:8000', 'bentchmarck.com']
@@ -65,6 +65,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'track_delivery.apps.TrackDeliveryConfig',
+    "phonenumber_field",
 ]
 
 MIDDLEWARE = [

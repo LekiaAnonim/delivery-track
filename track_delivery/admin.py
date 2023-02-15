@@ -5,11 +5,10 @@ admin.site.register(Package)
 
 
 class PackageAdmin(admin.ModelAdmin):
-    list_display = ('name', 'short_description', 'track_id', 'receive_date', 'owner',
+    list_display = ('name', 'short_description', 'track_id', 'receive_date', 'owner', 'phone_number', 'current_location',
                     'destination_address', 'country', 'arrival_date', 'delivery_status', 'comment')
     fields = ['name', 'short_description', 'track_id', 'receive_date',
-              'owner', 'destination_address', 'country', 'arrival_date', 'delivery_status', 'comment']
-    
+              'owner', 'phone_number', 'current_location', 'destination_address', 'country', 'arrival_date', 'delivery_status', 'comment']
 
 
 class ProductInline(admin.TabularInline):

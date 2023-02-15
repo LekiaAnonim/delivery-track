@@ -1,5 +1,5 @@
 from django.db import models
-
+from phonenumber_field.modelfields import PhoneNumberField
 # Create your models here.
 
 import random
@@ -20,9 +20,13 @@ class Package(models.Model):
     short_description = models.TextField(null=True)
     track_id = models.CharField(default=random_alphanumeric_string(),max_length=500, unique=True, null=False, blank=False)
     owner = models.CharField(max_length=500, null=True)
-    destination_address = models.CharField(max_length=500, null=True)
-    destination_country = models.CharField(max_length=500, null=True)
-    arrival_date = models.DateTimeField(max_length=500, null=True)
+    phone_number = PhoneNumberField(blank=True)
+    destination_address = models.CharField(
+        max_length=500, null=True, blank=True)
+    destination_country = models.CharField(
+        max_length=500, null=True, blank=True)
+    arrival_date = models.DateTimeField(max_length=500, null=True, blank=True)
+    current_location = models.CharField(max_length=500, null=True, blank=True)
 
     SALE_STATUS = (
         ('Still at station', 'Still at Station'),
