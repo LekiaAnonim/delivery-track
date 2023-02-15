@@ -27,6 +27,7 @@ class Package(models.Model):
     SALE_STATUS = (
         ('Still at station', 'Still at Station'),
         ('On transit', 'On Transit'),
+        ('On hold', 'On Hold'),
         ('Arrived in destination', 'Arrived in Destination'),
         ('Delivered', 'Delivered')
     )

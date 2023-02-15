@@ -70,7 +70,9 @@ h3 {
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0, 0, 0, .3);
 } */
-
+.row{
+    background-color: rgba(255, 255, 255, 0.10);
+}
 .slideshow {
     /* position: fixed; */
     width: 100%;
@@ -81,6 +83,7 @@ h3 {
     list-style: none;
     margin: 0;
     padding: 0;
+    
 }
 
 .slideshow li {
@@ -145,15 +148,38 @@ h3 {
 .no-cssanimations .slideshow li {
     opacity: 1;
 }
+.g-translate-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #02152e;
+    flex-direction: column;
+    padding: 10px;
+}
+.g-translate-container div{
+    padding: 0;
+    margin: 0;
+}
+.g-translate-container select {
+    padding: 0;
+    margin: 0;
+}
+.countries-flag{
+    padding: 0;
+    margin-top: 10px;
+}
 .nav-bar{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: rgba(66, 65, 65, 0.774);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.30);
 }
 .logo{
     padding: 0;
-    width: 50px;
-    height: 45px;
+    width: 100px;
+    height: 50px;
 }
 .logo img{
     width: 100%;
@@ -173,6 +199,8 @@ li{
 }
 .nav-menu nav ul li a{
     color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 900;
 }
 .menu-image-text{
     display: flex;
@@ -1018,7 +1046,7 @@ li{
 }
 .footer-logo{
     width: 150px;
-    height: 140px;
+    height: 80px;
 }
 .footer-logo img{
     width: 100%;
@@ -1322,4 +1350,130 @@ li{
         position: relative;
         height: 60vh;
     }
+}
+
+
+.shipment-info{
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+.shipment-info .shipment-section-title{
+    color: #0e66ea;
+    font-weight: 500;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+}
+.shipment-info hr{
+    border: 1px #fafafa solid;
+}
+.shipment-title-id-description{
+    margin-bottom: 10px;
+}
+.shipment-title-id-description .shipment-description{
+    padding: 0;
+    margin: 0;
+    color: #000;
+    line-height: 1;
+}
+.shipment-title-id-description .shipment-heading-2 {
+    padding: 0;
+    margin: 0;
+    color: #000;
+    line-height: 1;
+    /* border: #ea830e solid; */
+    text-align: left;
+}
+.shipment-title-id-description .shipment-heading-3 {
+    padding: 0;
+    margin: 0;
+    color: #000;
+    line-height: 1;
+    font-size: 14px;
+}
+.package-track-card .package-track-dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px #424242 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.package-track-line{
+    width: 0.1px;
+    height: 40px;
+    border: 1.5px #424242 dashed;
+}
+.package-track-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 130px;
+}
+.package-track-pointer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.package-track-text{
+    padding: 0;
+    margin: 0;
+    width: 100px;
+}
+.package-track-text p{
+    padding: 0;
+    margin: 0;
+    color: #4d4d4d;
+    font-weight: 600;
+    text-align: left;
+    line-height: 1;
+}
+.active-track{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 130px;
+}
+.active-track .package-track-dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px #0e66ea solid;
+    /* background-color: #0e66ea; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .active-track ~ .package-track-card .package-track-line{
+    border: 1.5px #0e66ea solid;
+} */
+
+.package-status-track-container .package-track-card .package-track-dot:not(.active-track ~ .package-track-card .package-track-dot) {
+    background-color: #0e66ea;
+    border: 3px #0e66ea solid;
+    /* content: "\2713"; */
+    font-size: 14px;
+}
+.package-status-track-container .package-track-card .package-track-line:not(.active-track ~ .package-track-card .package-track-line) {
+    border: 1.5px #0e66ea solid;
+}
+
+.package-status-track-container .package-track-card .package-track-dot {
+    border: 3px #424242 solid;
+    background-color: none;
+}
+.active-track ~ .package-track-card .package-track-dot {
+    border: 3px #424242 solid;
+    background-color: #ffff;
+    
+}
+.active-track ~ .package-track-card .package-track-line {
+    border: 1.5px #424242 dashed;
 }

@@ -25,7 +25,7 @@ def track_package(request):
     if request.method == 'GET':
         search = request.GET.get("search")
         package = Package.objects.filter(track_id=search)
-        print(package)
+        # print(package)
     # template = loader.get_template('index.html')
         context = {
             'package': package,

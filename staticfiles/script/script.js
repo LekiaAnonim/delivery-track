@@ -135,3 +135,14 @@ document.addEventListener('scroll', (event) => {
   }
   
 })
+
+const trackDots = document.querySelectorAll('.package-status-track-container .package-track-card .package-track-dot:not(.active-track ~ .package-track-card .package-track-dot)');
+trackDots.forEach((dot) => {
+  dot.innerText = '&#10003;';
+  console.log(dot);
+  console.log('hi');
+})
+
+const CurrentDot = document.querySelector('.active-track .package-track-dot');
+
+CurrentDot.innerText= '&#8702;';
