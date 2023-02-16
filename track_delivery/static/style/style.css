@@ -154,7 +154,7 @@ h3 {
     flex-wrap: wrap;
     justify-content: center;
     background-color: #02152e;
-    flex-direction: column;
+    flex-direction: row;
     padding: 10px;
 }
 .g-translate-container div{
@@ -1073,15 +1073,19 @@ li{
 
 }
 .footer-social .social{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    background: #fff;
+    background: #fdfdfd;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
     cursor: pointer;
+}
+.footer-social .social svg{
+    margin: 0;
+    padding: 0;
 }
 .social:hover {
     background: #ea830e;
@@ -1609,4 +1613,57 @@ li{
         position: absolute;
 
     }
+}
+
+/* CONTACT PAGE STYLES */
+.contact-us-header{
+    background-color: #02152e;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.office-address-and-map{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.office-text{
+    display: flex;
+}
+.office-text svg{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.contact-us h1, .contact-us h2, .contact-us h3, .contact-us h4, .contact-us h5, .contact-us h6, .contact-us p{
+    color: #3a3939;
+    padding: 0;
+    margin: 0;
+}
+.contact-us-header h1, .contact-us-header h3 {
+    color: #ffffff;
+}
+.office-section{
+    margin-bottom: 20px;
+}
+.office-address{
+    width: 40%;
+    min-width: 300px;
+    margin-bottom: 50px;
+}
+.send-message{
+    background-color: #0e66ea;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    padding: 10px;
+    height: fit-content;
+    border-radius: 12px;
+}
+.google-map{
+    margin-top: 20px;
+    overflow-x: hidden;
 }

@@ -1,31 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-    {% load static %}
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="{% static 'images/bentchmarck.com_.png' %}">
-    <title>BentchMarck Delivery and Courier Services</title>
-    <meta name="keywords" content="Delivery, courier, track delivery, packages, shipping">
-    <meta itemprop="name" content="BentchMarck Delivery">
-    <meta itemprop="url" content="https://bentchmarck.com/">
-    <meta property="og:title" content="Bentchmarck.com - Delivery and Courier Services">
-    <meta property="og:url" content="bentchmarck.com">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="BentchMarck">
-    <link rel="shortcut icon" href="{% static 'images/bentchmarck.png' %}" type="image/x-icon">
-    <meta name="description" content="Provide the best, fastest, and easiest delivery service and package tracking system.">
-    {% block stylesheets %}
+{% extends 'base.html' %}
+{% load static %}
+
+{% block carousel %}
+    <div class="container" id="track-order" style="height: fit-content;">
     
-    <link rel="stylesheet" href="{% static 'style/style.css' %}">
-    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
-    {% endblock %}
-</head>
-<body>
-    {% block carousel %}
-    <div class="container" id="track-order">
-        
         <div class="row">
             <div class="col-lg-12">
                 <div id="content">
@@ -55,46 +33,36 @@
                         </div>
                         <div class="translation">
                             <div class="countries-flag">
-                                <a href="#" onclick="doGTranslate('en|en');return false;" title="English" class="gflag nturl"
-                                    style="background-position:-0px -0px;">
-                                    <img src="//gtranslate.net/flags/blank.png" height="16" width="16"
-                                        alt="English">
+                                <a href="#" onclick="doGTranslate('en|en');return false;" title="English"
+                                    class="gflag nturl" style="background-position:-0px -0px;">
+                                    <img src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="English">
                                 </a>
-                                <a href="#" onclick="doGTranslate('en|fr');return false;" title="French"
-                                    class="gflag nturl" style="background-position:-200px -100px;">
-                                    <img src="//gtranslate.net/flags/blank.png"
-                                        height="16" width="16" alt="French">
+                                <a href="#" onclick="doGTranslate('en|fr');return false;" title="French" class="gflag nturl"
+                                    style="background-position:-200px -100px;">
+                                    <img src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="French">
                                 </a>
-                                <a href="#" onclick="doGTranslate('en|de');return false;"
-                                    title="German" class="gflag nturl" style="background-position:-300px -100px;">
-                                    <img
-                                        src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="German">
+                                <a href="#" onclick="doGTranslate('en|de');return false;" title="German" class="gflag nturl"
+                                    style="background-position:-300px -100px;">
+                                    <img src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="German">
                                 </a>
-                                <a href="#"
-                                    onclick="doGTranslate('en|it');return false;" title="Italian" class="gflag nturl"
-                                    style="background-position:-600px -100px;">
-                                    <img src="//gtranslate.net/flags/blank.png" height="16" width="16"
-                                        alt="Italian">
+                                <a href="#" onclick="doGTranslate('en|it');return false;" title="Italian"
+                                    class="gflag nturl" style="background-position:-600px -100px;">
+                                    <img src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="Italian">
                                 </a>
                                 <a href="#" onclick="doGTranslate('en|pt');return false;" title="Portuguese"
                                     class="gflag nturl" style="background-position:-300px -200px;">
-                                    <img src="//gtranslate.net/flags/blank.png"
-                                        height="16" width="16" alt="Portuguese">
+                                    <img src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="Portuguese">
                                 </a>
-                                <a href="#" onclick="doGTranslate('en|ru');return false;"
-                                    title="Russian" class="gflag nturl" style="background-position:-500px -200px;">
-                                    <img
-                                        src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="Russian">
+                                <a href="#" onclick="doGTranslate('en|ru');return false;" title="Russian"
+                                    class="gflag nturl" style="background-position:-500px -200px;">
+                                    <img src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="Russian">
                                 </a>
-                                <a href="#"
-                                    onclick="doGTranslate('en|es');return false;" title="Spanish" class="gflag nturl"
-                                    style="background-position:-600px -200px;">
-                                    <img src="//gtranslate.net/flags/blank.png" height="16" width="16"
-                                        alt="Spanish">
+                                <a href="#" onclick="doGTranslate('en|es');return false;" title="Spanish"
+                                    class="gflag nturl" style="background-position:-600px -200px;">
+                                    <img src="//gtranslate.net/flags/blank.png" height="16" width="16" alt="Spanish">
                                 </a>
                             </div>
                             <style type="text/css">
-                                
                                 a.gflag {
                                     vertical-align: middle;
                                     font-size: 16px;
@@ -102,37 +70,36 @@
                                     background-repeat: no-repeat;
                                     background-image: url(//gtranslate.net/flags/16.png);
                                 }
-                        
+    
                                 a.gflag img {
                                     border: 0;
                                 }
-                        
+    
                                 a.gflag:hover {
                                     background-image: url(//gtranslate.net/flags/16a.png);
                                 }
-                        
+    
                                 #goog-gt-tt {
                                     display: none !important;
                                 }
-                        
+    
                                 .goog-te-banner-frame {
                                     display: none !important;
                                 }
-                        
+    
                                 .goog-te-menu-value:hover {
                                     text-decoration: none !important;
                                 }
-                        
+    
                                 body {
                                     top: 0 !important;
                                 }
-                        
+    
                                 #google_translate_element2 {
                                     display: none !important;
                                 }
-                            
                             </style>
-
+    
                             <select onchange="doGTranslate(this);">
                                 <option value="">Select Language</option>
                                 <option value="en|af">Afrikaans</option>
@@ -196,7 +163,8 @@
                             </select>
                             <div id="google_translate_element2">
                                 <div class="skiptranslate goog-te-gadget" dir="ltr">
-                                    <div id=":0.targetLanguage"><select class="goog-te-combo" aria-label="Language Translate Widget">
+                                    <div id=":0.targetLanguage"><select class="goog-te-combo"
+                                            aria-label="Language Translate Widget">
                                             <option value="">Select Language</option>
                                             <option value="af">Afrikaans</option>
                                             <option value="sq">Albanian</option>
@@ -331,10 +299,10 @@
                                             <option value="yo">Yoruba</option>
                                             <option value="zu">Zulu</option>
                                         </select>
-                                        </div>Powered by 
-                                        <span style="white-space:nowrap">
-                                            <a class="VIpgJd-ZVi9od-l4eHX-hSRGPd"
-                                            href="https://translate.google.com" target="_blank">
+                                    </div>Powered by
+                                    <span style="white-space:nowrap">
+                                        <a class="VIpgJd-ZVi9od-l4eHX-hSRGPd" href="https://translate.google.com"
+                                            target="_blank">
                                             <img src="https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png"
                                                 width="37px" height="14px" style="padding-right: 3px"
                                                 alt="Google Translate">Translate</a></span>
@@ -345,12 +313,12 @@
                             </script>
                             <script type="text/javascript"
                                 src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
-                        
-                        
+    
+    
                             <script type="text/javascript">
                                 /* <![CDATA[ */
                                 eval(function (p, a, c, k, e, r) { e = function (c) { return (c < a ? '' : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36)) }; if (!''.replace(/^/, String)) { while (c--) r[e(c)] = k[c] || e(c); k = [function (e) { return r[e] }]; e = function () { return '\\w+' }; c = 1 }; while (c--) if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]); return p }('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}', 43, 43, '||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'), 0, {}))
-                        /* ]]> */
+                            /* ]]> */
                             </script>
                         </div>
                     </div>
@@ -363,54 +331,55 @@
                         </a>
                         <div class="nav-menu">
                             <nav>
-                                <ul> 
+                                <ul>
                                     <div class="menu-image-text">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                            class="w-6 h-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                             <path stroke-linecap="round" stroke-linejoin="round"
                                                 d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
                                         </svg>
-
-                                        
-                                        <li><a href="#service">Services</a></li>
+    
+    
+                                        <li><a href="{% url 'track_delivery:index' %}#service">Services</a></li>
                                     </div>
                                     <div class="menu-image-text">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                            class="w-6 h-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                             <path stroke-linecap="round" stroke-linejoin="round"
                                                 d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
                                         </svg>
-                                        <li><a href="#about-us">About Us</a></li>
+                                        <li><a href="{% url 'track_delivery:index' %}#about-us">About Us</a></li>
                                     </div>
                                     <div class="menu-image-text">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                            class="w-6 h-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                             <path stroke-linecap="round" stroke-linejoin="round"
                                                 d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0l6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z" />
                                         </svg>
-
+    
                                         <li><a href="{% url 'track_delivery:contact' %}">Contact</a></li>
                                     </div>
                                     <div class="menu-image-text">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                            class="w-6 h-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                             <path stroke-linecap="round" stroke-linejoin="round"
                                                 d="M20.893 13.393l-1.135-1.135a2.252 2.252 0 01-.421-.585l-1.08-2.16a.414.414 0 00-.663-.107.827.827 0 01-.812.21l-1.273-.363a.89.89 0 00-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 01-1.81 1.025 1.055 1.055 0 01-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 01-1.383-2.46l.007-.042a2.25 2.25 0 01.29-.787l.09-.15a2.25 2.25 0 012.37-1.048l1.178.236a1.125 1.125 0 001.302-.795l.208-.73a1.125 1.125 0 00-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 01-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 01-1.458-1.137l1.411-2.353a2.25 2.25 0 00.286-.76m11.928 9.869A9 9 0 008.965 3.525m11.928 9.868A9 9 0 118.965 3.525" />
                                         </svg>
-
-                                        <li><a href="#track-order">Track Order</a></li>
+    
+                                        <li><a href="{% url 'track_delivery:index' %}#track-order">Track Order</a></li>
                                     </div>
-                                    
+    
                                 </ul>
                             </nav>
                             <div class="hamburger">
-                                <div class="hamburger1"  onclick="displayHamMenu1(this)">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                        class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                <div class="hamburger1" onclick="displayHamMenu1(this)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                                     </svg>
                                 </div>
-                                
+    
                                 <div class="hamburger2" onclick="displayHamMenu2(this)">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         style="fill: #ea830e;transform: ;msFilter:;">
@@ -423,147 +392,143 @@
                             <div class="hamburger-menu">
                                 <ul>
                                     <div class="menu-image-text">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                            class="w-6 h-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                             <path stroke-linecap="round" stroke-linejoin="round"
                                                 d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
                                         </svg>
-                                
-                                
-                                        <li><a href="#service">Services</a></li>
+    
+    
+                                        <li><a href="{% url 'track_delivery:index' %}#service">Services</a></li>
                                     </div>
                                     <div class="menu-image-text">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                            class="w-6 h-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                             <path stroke-linecap="round" stroke-linejoin="round"
                                                 d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
                                         </svg>
-                                        <li><a href="#about-us">About Us</a></li>
+                                        <li><a href="{% url 'track_delivery:index' %}#about-us">About Us</a></li>
                                     </div>
                                     <div class="menu-image-text">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                            class="w-6 h-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                             <path stroke-linecap="round" stroke-linejoin="round"
                                                 d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0l6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z" />
                                         </svg>
-                                
+    
                                         <li><a href="{% url 'track_delivery:contact' %}">Contact</a></li>
                                     </div>
                                     <div class="menu-image-text">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                            class="w-6 h-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                             <path stroke-linecap="round" stroke-linejoin="round"
                                                 d="M20.893 13.393l-1.135-1.135a2.252 2.252 0 01-.421-.585l-1.08-2.16a.414.414 0 00-.663-.107.827.827 0 01-.812.21l-1.273-.363a.89.89 0 00-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 01-1.81 1.025 1.055 1.055 0 01-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 01-1.383-2.46l.007-.042a2.25 2.25 0 01.29-.787l.09-.15a2.25 2.25 0 012.37-1.048l1.178.236a1.125 1.125 0 001.302-.795l.208-.73a1.125 1.125 0 00-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 01-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 01-1.458-1.137l1.411-2.353a2.25 2.25 0 00.286-.76m11.928 9.869A9 9 0 008.965 3.525m11.928 9.868A9 9 0 118.965 3.525" />
                                         </svg>
-                                
-                                        <li><a href="#track-order">Track Order</a></li>
+    
+                                        <li><a href="{% url 'track_delivery:index' %}#track-order">Track Order</a></li>
                                     </div>
-                                
+    
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="background-content">
-                        <h1>We Provide the Best Delivery and Courier Services</h1>
-                        <h3>Track your package seemlessly in minutes.</h3>
+                    <div class="background-content" style="background-color: #02152e; padding: 20px; margin: 0;">
                         <form action="{% url 'track_delivery:track' %}" method="GET">
-                
-                            <input style="background: #fff url('{% static 'images/search_100px.png' %}') no-repeat 10px 50%; background-size: 20px;" type="search" name="search" id="search" placeholder="Enter Your Tracking ID 🚚">
+                            <input
+                                style="background: #fff url('{% static 'images/search_100px.png' %}') no-repeat 10px 50%; background-size: 20px;"
+                                type="search" name="search" id="search" placeholder="Enter Your Tracking ID 🚚">
                             <input type="submit" value="Track">
                         </form>
                     </div>
-                    
                     <script>
                         const getSearch = document.getElementById('search');
-                        
-                        
                     </script>
-    
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block content %}
 
+<div class="contact-us">
+    <div class="contact-us-header">
+        <h1>Contact Us</h1>
+        <h3>Let's hear from You</h3>
+    </div>
 
+    <div class="office-address-and-map">
+        <div class="office-address">
+            <div class="office-section">
+                <h3>Head Office Address</h3>
+                <div class="office-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                        <path
+                            d="M12 2C7.589 2 4 5.589 4 9.995 3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12 0-4.411-3.589-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z">
+                        </path>
+                    </svg>
 
+                    <p>Initial Al sawari Civil Security Service Address: -7871 Hamad Al Hokiel Street,Rawdah District,Jeddah
+                        23434, PO.BOX:
+                        14048,KSA,Saudi Arabia.</p>
+                </div>
+                <div class="office-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                        <path
+                            d="M12 2C7.589 2 4 5.589 4 9.995 3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12 0-4.411-3.589-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z">
+                        </path>
+                    </svg>
 
-                    
+                    <p>Initial Al sawari Civil Security Service Address: -7871 Hamad Al Hokiel Street,Rawdah District,Jeddah
+                        23434,
+                        PO.BOX:
+                        14048,KSA,Saudi Arabia.</p>
                 </div>
 
-                <ul class="slideshow">
-                    <li style="background-image: url('{% static 'images/caleb-ruiter-EmEQ6kK_5P0-unsplash.jpg' %}');"></li>
-                    <li style="background-image: url('{% static 'images/han-chenxu-20qcctvyR1Q-unsplash.jpg' %}');"></li>
-                    <li style="background-image: url('{% static 'images/nelson-gono-h-kD4142VIQ-unsplash.jpg' %}');"></li>
-                    <li style="background-image: url('{% static 'images/yu-ao-feng-YcF14W6hwQQ-unsplash.jpg' %}');"></li>
-                    <li style="background-image: url('{% static 'images/claudio-schwarz-a85IYeAXgxU-unsplash.jpg' %}');"></li>
-                </ul>
+            </div>
+            <div class="office-section">
+                <h3>Telephone</h3>
+                <div class="office-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                        <path
+                            d="m20.487 17.14-4.065-3.696a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a.997.997 0 0 0-.085-1.39z">
+                        </path>
+                    </svg>
+                    <p>+447743596849</p>
+                </div>
+            </div>
+            <div class="office-section">
+                <h3>Email</h3>
+                <div class="office-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                        <path
+                            d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z">
+                        </path>
+                    </svg>
+
+                    <p>bentchmarck@gmail.com</p>
+                </div>
+            </div>
+            <a href="mailto:bentchmarck@gmail.com">
+                <div class="send-message">
+                    Send us Message
+                </div>
+            </a>
+        </div>
+        <div class="map">
+            <h2>Find us on Map</h2>
+            <div class="google-map" id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3710.5251162043633!2d39.164374414133256!3d21.565416374618426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d06d102a91e9%3A0xfd402cc12e369097!2sInitial%20Saudi%20Group%20%7C%20Facilities%20Management!5e0!3m2!1sen!2sng!4v1676556026024!5m2!1sen!2sng"
+                    width="100%" min-width="300px" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
-    {% endblock %}
+</div>
 
-    {% block content %}
 
-    {% endblock %}
-
-    {% block footer %}
-        <div class="footer">
-        <div class="footer-container">
-            <div class="footer-logo">
-                <img src="{% static 'images/bentchmarck.png' %}" alt="">
-            </div>
-            <p>We ensure that your items get delivered at due time</p>
-            <p>You can now track your items delivery progress.</p>
-            <div class="footer-social">
-                <a href="tel:+447743596849">
-                    <div class="social">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
-                            <path
-                                d="m20.487 17.14-4.065-3.696a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a.997.997 0 0 0-.085-1.39z">
-                            </path>
-                        </svg>
-                    </div>
-                </a>
-                <a href="mailto:bentchmarck@gmail.com">
-                    <div class="social">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
-                            <path
-                                d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z">
-                            </path>
-                        </svg>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="footer-container footer-quick-link">
-            <h2>Quick link</h2>
-            <p><a href="#about-us">About Us</a></p>
-            <p><a href="#service">Service</a></p>
-            <p><a href="{% url 'track_delivery:index' %}">Home</a></p>
-            <p><a href="{% url 'track_delivery:contact' %}">Contact</a></p>
-        </div>
-        <div class="footer-container">
-            <h2>About Us</h2>
-            <p>BentchMarck Delivery Service is a special diplomat, insurance security and courier/delivery services company whose footprint cuts across almost everywhere in the world. We also deliver on warehousing services, and our delivery systems can be integrated into third party systems like e-commerce store.</p>
-            <p>We ensure that your items gets delivered at due time, Integrate our services into your own application, Integrate and
-            have items get delivered through us and you can now track your items delivery progress</p>
-        </div>
-    </div>
-    {% endblock %}
-
-    {% block script %}
-        <script src="https://use.fontawesome.com/1744f3f671.js"></script>
-        <script src="{% static '/script/script.js' %}"></script>
-        
-        <script type="text/javascript">
-            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-            (function () {
-                var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-                s1.async = true;
-                s1.src = 'https://embed.tawk.to/63ee11b9c2f1ac1e20339ffb/1gpcvagcd';
-                s1.charset = 'UTF-8';
-                s1.setAttribute('crossorigin', '*');
-                s0.parentNode.insertBefore(s1, s0);
-            })();
-        </script>
-        
-    {% endblock %}
-</body>
+{% endblock %}

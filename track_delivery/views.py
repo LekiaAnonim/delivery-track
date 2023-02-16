@@ -11,9 +11,14 @@ def index(request):
     }
     return render(request, 'index.html', context)
 
+def contact(request):
+    
+    context = {
+    }
+    return render(request, 'contact.html', context)
 
 def track_package(request):
-    
+
     if request.method == 'GET':
         search = request.GET.get("search")
         package = Package.objects.filter(track_id=search)
