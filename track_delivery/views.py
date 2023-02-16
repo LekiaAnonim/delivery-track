@@ -13,7 +13,6 @@ def index(request):
 
 
 def track_package(request):
-
     
     if request.method == 'GET':
         search = request.GET.get("search")

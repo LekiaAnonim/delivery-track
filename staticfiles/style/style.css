@@ -1605,8 +1605,8 @@ li{
 
     .current-location {
 
-        margin: -30% auto 10% 12%;
-        position: relative;
+        margin: -36% auto auto 30%;
+        position: absolute;
 
     }
 }
