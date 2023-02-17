@@ -15,11 +15,11 @@ def random_alphanumeric_string():
     )+'BMK'
 
 class Package(models.Model):
-    name = models.CharField(max_length=500, null=True)
-    receive_date = models.DateField(null=True)
-    short_description = models.TextField(null=True)
+    name = models.CharField(max_length=500, null=True, blank=True)
+    # receive_date = models.DateField(null=True)
+    short_description = models.TextField(null=True, blank=True)
     track_id = models.CharField(default=random_alphanumeric_string(),max_length=500, unique=True, null=False, blank=False)
-    owner = models.CharField(max_length=500, null=True)
+    owner = models.CharField(max_length=500, null=True, blank=True)
     phone_number = PhoneNumberField(blank=True)
     destination_address = models.CharField(
         max_length=500, null=True, blank=True)
@@ -38,7 +38,7 @@ class Package(models.Model):
     delivery_status = models.CharField(choices=SALE_STATUS,
                                        default='Still at station', max_length=50, null=True)
 
-    comment = models.TextField(null=True)
+    comment = models.TextField(null=True, blank=True)
 
     def __str__(self):
         return f"{self.name}"
