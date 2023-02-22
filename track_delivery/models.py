@@ -9,10 +9,11 @@ import string
 def random_alphanumeric_string():
     return ''.join(
         random.choices(
-            string.ascii_letters + string.digits,
+            # string.ascii_letters + string.digits,
+            string.digits,
             k=12
         )
-    )+'BMK'
+    )
 
 class Package(models.Model):
     name = models.CharField(max_length=500, null=True, blank=True)
