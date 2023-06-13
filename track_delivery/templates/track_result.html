@@ -120,9 +120,12 @@
             <div class="shipment-info-heading">
                 <div class="shipment-title-id-description">
                     <p class="shipment-section-title">Your shipment</p>
-                    <h4 class="shipment-heading-2">Sender: {{package.sender}}</h4>
-                    <h4 class="shipment-heading-2">Receiver: {{package.receiver}}</h4>
-                    <h2 class="shipment-heading-2">{{package.name}}</h2>
+                    {% if package.sender %}
+                    <h6 class="shipment-heading-2">Sender: {{package.sender}}</h6>
+                    {% else %}
+                    <p></p>
+                    {% endif %}
+                    <span class="shipment-heading-2">Receiver: {{package.receiver}}</span>
                     <h2 class="shipment-heading-2">{{package.name}}</h2>
                     <h3 class="shipment-heading-3">{{package.track_id}}</h3>
                     <p class="shipment-description">{{package.short_description}}</p>
