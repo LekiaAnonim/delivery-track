@@ -20,7 +20,8 @@ class Package(models.Model):
     # receive_date = models.DateField(null=True)
     short_description = models.TextField(null=True, blank=True)
     track_id = models.CharField(default=random_alphanumeric_string(),max_length=500, unique=True, null=False, blank=False)
-    owner = models.CharField(max_length=500, null=True, blank=True)
+    receiver = models.CharField(max_length=500, null=True, blank=True)
+    sender = models.CharField(max_length=500, null=True, blank=True)
     phone_number = PhoneNumberField(blank=True)
     destination_address = models.CharField(
         max_length=500, null=True, blank=True)
